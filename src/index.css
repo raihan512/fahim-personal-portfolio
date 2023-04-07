@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.section-title,.section-title2,.section-title3{
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.section-title::after,.section-title2::after,.section-title3::after{
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0%;
+  height: 3px;
+  width: 20%;
+background-color: #E33324;
+}
+.section-title2::after{
+  width: 5%;
+}
+.section-title3::after{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title3::after{
+  width: 5%;
 }

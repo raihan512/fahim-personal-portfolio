@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import {} from "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
             through carefully crafted code and user-centric design.
           </p>
           <button className="py-2 px-8 border hover:bg-[#E33324] hover:border-[#E33324] transition-all">
-            Download CV
+            <Link to="">RESUME</Link>
           </button>
         </div>
       </div>

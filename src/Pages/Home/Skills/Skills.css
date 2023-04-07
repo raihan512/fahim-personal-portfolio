@@ -1,0 +1,38 @@
+.progress-bar{
+    position: relative;
+}
+.progress-bar::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #e1e1e1;
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: #E33324;
+}
+.progress-number{
+    color: #e33324;
+    border: 1px solid #e33324;
+
+    height: 30px;
+	margin-top: -44px;
+	position: absolute;
+	right: calc(100% - 40px);
+	width: 54px;
+	z-index: 10;
+	color: #e33324;
+	border-radius: 40px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 28px;
+	top: 50%;
+    right: 0;
+	text-align: center;
+}

@@ -1,0 +1,114 @@
+.services-boxes {
+	background:#ffffff;
+	border: 5px solid rgba(0, 0, 0, 0.07);
+	margin-top:5px;
+	margin-bottom:5px;
+	border-radius:10px;
+	padding:30px 25px !important;
+	position:relative;
+	box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+}
+.services-boxes .service-number{
+	position: absolute;
+	z-index: 0;
+	opacity: 0.4;
+	top: 0;
+	left: 10px;
+	height: auto;
+	font-weight: 800;
+	color: #f0f0f0;
+	font-size: 80px;
+	line-height: 80px;
+}
+.services-boxes .services-boxes-icon{
+	margin-top:10px;
+}
+.services-boxes .services-boxes-icon i {
+	background: #f0f0f0;
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 80px;
+    border-radius: 50px;
+}
+span.sub-item-title {
+    background: #e33324;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    line-height: 26px;
+    color: #fff;
+    padding: 1.5px 12px;
+    display: inline-block;
+    max-width: max-content;
+    margin: 0 auto 8px auto;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.services-boxes .services-title-border {
+	height: 3px;
+	border-radius:30px;
+	width: 60px;
+	margin: 15px auto;
+	-webkit-transition: all .6s ease-out;
+    -o-transition: all .6s ease-out;
+    transition: all .6s ease-out;
+}
+.services-boxes:hover {
+	transition: all 0.3s ease-in;
+    background:#e33324;
+    color: #fff;
+	border: 5px solid #e33324;
+	box-shadow:0 4px 35px rgba(0, 0, 0, 0.2);
+	-webkit-transform: scale(1.03) rotate(0deg);
+    transform: scale(1.03) rotate(0deg);
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.services-boxes:hover p.text-muted{
+	color:#ffffff !important;
+}
+.services-boxes:hover .services-boxes-icon i{
+	background:#ffffff;
+	-webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.service-box {
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+}
+.services-boxes h5 {
+	font-weight: 600;
+}
+.services-boxes a.detail-link{
+	margin-bottom: 10px;
+    display: block;
+	background: #e33324;
+	color: #ffffff;
+	border: 2px solid #e33324;
+	border-radius: 4px;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 5px 15px;
+	display: inline-block;
+	transition: all 0.5s;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+}
+.services-boxes:hover a.detail-link{
+	background:#ffffff;
+	border:2px solid #ffffff;
+	color:#e33324;
+}
+.service-box .service-content h5 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.service-box .service-content p {
+	font-size: 15px;
+}
