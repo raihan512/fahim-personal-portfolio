@@ -35,7 +35,7 @@ const Contact = () => {
   };
   return (
     <section className="px-2 my-6 md:my-8">
-      <div className="container mx-auto">
+      <div className="container mx-auto" data-aos="zoom-in-up">
         {/* Title */}
         <div className="flex justify-center mb-8">
           <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold uppercase text-center border-b-2 border-[#E33324]">

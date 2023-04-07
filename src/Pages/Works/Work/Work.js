@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const Work = ({ workItem }) => {
   const { id, title, thumb, year } = workItem;
   return (
-    <div className="rounded-md hover:shadow-xl transition-all border hover:border-[#E33324] ">
+    <div
+      className="rounded-md hover:shadow-xl transition-all border hover:border-[#E33324] "
+      data-aos="zoom-in"
+    >
       <div className="p-5">
         <Link to={`work/${id}`}>
           <img src={thumb} alt="" />

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Acheivement = ({ achievementItem }) => {
   const { thumb, title, id, year } = achievementItem;
   return (
-    <div>
+    <div data-aos="zoom-in">
       <Link to={`/acheivements/acheivement/${id}`}>
         <div>
           <div className="h-44 overflow-hidden">

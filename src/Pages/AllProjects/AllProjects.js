@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Project from "../Shared/Project/Project";
+import Zoom from "react-reveal/Fade";
 
 const AllProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -19,7 +20,9 @@ const AllProjects = () => {
         {/* Project Container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {projects.map((projectItem) => (
-            <Project key={projectItem.id} projectItem={projectItem}></Project>
+            <>
+              <Project key={projectItem.id} projectItem={projectItem}></Project>
+            </>
           ))}
         </div>
       </div>

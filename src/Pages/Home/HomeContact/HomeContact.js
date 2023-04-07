@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { CiPaperplane } from "react-icons/ci";
+import Fade from "react-reveal/Fade";
 
 const HomeContact = () => {
   const form = useRef();
@@ -33,51 +34,53 @@ const HomeContact = () => {
         </h2>
         {/* form */}
         <div className="">
-          <form ref={form} onSubmit={sendEmail} className="md:w-6/12 mx-auto">
-            <div className="grid grid-cols-1 gap-5">
-              <div>
-                <p className="text-lg font-semibold uppercase mb-2">
-                  Your Name
-                </p>
-                <input
-                  type="text"
-                  name="from_name"
-                  placeholder="Enter your name"
-                  className="border w-full py-2 px-4 border-[#6d6d6d] outline-0 focus-visible:border-[#E33324]"
-                />
+          <Fade bottom>
+            <form ref={form} onSubmit={sendEmail} className="md:w-6/12 mx-auto">
+              <div className="grid grid-cols-1 gap-5">
+                <div>
+                  <p className="text-lg font-semibold uppercase mb-2">
+                    Your Name
+                  </p>
+                  <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Enter your name"
+                    className="border w-full py-2 px-4 border-[#6d6d6d] outline-0 focus-visible:border-[#E33324]"
+                  />
+                </div>
+                <div>
+                  <p className="text-lg font-semibold uppercase mb-2">
+                    Your email
+                  </p>
+                  <input
+                    type="email"
+                    name="from_email"
+                    placeholder="Enter your email"
+                    className="border w-full py-2 px-4 border-[#6d6d6d] outline-0 focus-visible:border-[#E33324]"
+                  />
+                </div>
+                <div>
+                  <p className="text-lg font-semibold uppercase mb-2">
+                    Your Message
+                  </p>
+                  <textarea
+                    name="message"
+                    placeholder="Write your message here"
+                    className="border w-full py-2 px-4 h-40 border-[#6d6d6d] outline-0 focus-visible:border-[#E33324]"
+                  />
+                </div>
+                <div className="flex justify-end">
+                  <button
+                    type="submit"
+                    className="px-8 py-2 border border-[#E33324] text-[#E33324] font-semibold text-lg flex items-center transition-all hover:bg-[#E33324] hover:text-white"
+                  >
+                    Send
+                    <CiPaperplane className="ml-2" />
+                  </button>
+                </div>
               </div>
-              <div>
-                <p className="text-lg font-semibold uppercase mb-2">
-                  Your email
-                </p>
-                <input
-                  type="email"
-                  name="from_email"
-                  placeholder="Enter your email"
-                  className="border w-full py-2 px-4 border-[#6d6d6d] outline-0 focus-visible:border-[#E33324]"
-                />
-              </div>
-              <div>
-                <p className="text-lg font-semibold uppercase mb-2">
-                  Your Message
-                </p>
-                <textarea
-                  name="message"
-                  placeholder="Write your message here"
-                  className="border w-full py-2 px-4 h-40 border-[#6d6d6d] outline-0 focus-visible:border-[#E33324]"
-                />
-              </div>
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="px-8 py-2 border border-[#E33324] text-[#E33324] font-semibold text-lg flex items-center transition-all hover:bg-[#E33324] hover:text-white"
-                >
-                  Send
-                  <CiPaperplane className="ml-2" />
-                </button>
-              </div>
-            </div>
-          </form>
+            </form>
+          </Fade>
         </div>
       </div>
     </div>

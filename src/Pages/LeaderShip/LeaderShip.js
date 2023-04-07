@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LeaderShipItem from "./LeaderShipItem/LeaderShipItem";
+import Fade from "react-reveal/Fade";
 
 const LeaderShip = () => {
   const [leadership, setLeadership] = useState([]);

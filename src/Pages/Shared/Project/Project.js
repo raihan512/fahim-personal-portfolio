@@ -5,7 +5,7 @@ import {} from "./Project.css";
 const Project = ({ projectItem }) => {
   const { id, title, thumb, year } = projectItem;
   return (
-    <div className="text-center services-boxes p-4 mt-3">
+    <div className="text-center services-boxes p-4 mt-3" data-aos="zoom-in">
       <div className="service-number">{id}</div>
       <div className="services-boxes-icon">
         <img src={thumb} alt={title} />

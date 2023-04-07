@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Work from "./Work/Work";
+import Fade from "react-reveal/Fade";
 
 const Works = () => {
   const [works, setWorks] = useState([]);
