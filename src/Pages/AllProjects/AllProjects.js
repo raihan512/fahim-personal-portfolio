@@ -5,7 +5,7 @@ import Zoom from "react-reveal/Fade";
 const AllProjects = () => {
   const [projects, setProjects] = useState([]);
   //   Load Projects Data
-  fetch("https://qfahim-server.vercel.app/projects")
+  fetch("https://qfahim-server-raihan512.vercel.app/projects")
     .then((res) => res.json())
     .then((data) => setProjects(data));
   return (
@@ -13,7 +13,7 @@ const AllProjects = () => {
       <div className="container mx-auto">
         {/* Title */}
         <div className="flex justify-center mt-10 mb-14">
-          <h2 className="text-2xl lg:text-4xl font-semibold uppercase sm:w-4/12 text-center border-b-2 border-[#E33324]">
+          <h2 className="text-2xl lg:text-4xl font-semibold uppercase sm:w-4/12 text-center">
             All Projects
           </h2>
         </div>

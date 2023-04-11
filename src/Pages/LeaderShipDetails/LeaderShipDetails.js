@@ -1,9 +1,10 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const LeaderShipDetails = () => {
   const leaderShipDetails = useLoaderData();
-  const { title, images, desc } = leaderShipDetails;
+  const { title, images, desc, link, id } = leaderShipDetails;
+  console.log(link);
   return (
     <section className="px-2 my-6 md:my-20">
       <div className="container mx-auto">
@@ -33,6 +34,21 @@ const LeaderShipDetails = () => {
           )}
 
           <p className="text-lg text-[#555555] mt-5">{desc}</p>
+          <h5 className="mt-5 mb-3 text-lg font-semibold border-b-2 border-[#555555]">
+            Links
+          </h5>
+          <ul className="">
+            {id === "1" && (
+              <li>
+                <Link to={`${link}`}>Travellian</Link>
+              </li>
+            )}
+            {id === "2" && (
+              <li>
+                <Link to={`${link}`}>Basics</Link>
+              </li>
+            )}
+          </ul>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const Works = () => {
   const [works, setWorks] = useState([]);
-  fetch("https://qfahim-server.vercel.app/works")
+  fetch("https://qfahim-server-raihan512.vercel.app/works")
     .then((res) => res.json())
     .then((data) => setWorks(data));
   return (
@@ -12,7 +12,7 @@ const Works = () => {
       <div className="container mx-auto">
         {/* Title */}
         <div className="flex justify-center mt-10 mb-14">
-          <h2 className="text-2xl lg:text-4xl font-semibold uppercase sm:w-4/12 text-center border-b-2 border-[#E33324]">
+          <h2 className="text-2xl lg:text-4xl font-semibold uppercase sm:w-4/12 text-center">
             Works
           </h2>
         </div>

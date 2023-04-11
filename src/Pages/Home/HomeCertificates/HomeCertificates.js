@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 const HomeCertificates = () => {
   const [certificates, setCertificates] = useState([]);
   //   Load Projects Data
-  fetch("https://qfahim-server.vercel.app/certificates")
+  fetch("https://qfahim-server-raihan512.vercel.app/certificates")
     .then((res) => res.json())
     .then((data) => setCertificates(data));
   // Limit Showing Projects

@@ -8,7 +8,7 @@ const Projects = () => {
   const projectItem = projects[0];
   // console.log(projects[0]);
   //   Load Projects Data
-  fetch("https://qfahim-server.vercel.app/projects")
+  fetch("https://qfahim-server-raihan512.vercel.app/projects")
     .then((res) => res.json())
     .then((data) => setProjects(data));
   // Limit Showing Projects

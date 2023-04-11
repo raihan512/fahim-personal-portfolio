@@ -10,7 +10,7 @@ const Work = ({ workItem }) => {
     >
       <div className="p-5">
         <Link to={`work/${id}`}>
-          <img src={thumb} alt="" />
+          <img src={thumb} className="transition-all hover:scale-75" alt="" />
           <h4 className="text-xl font-semibold mt-4">{title}</h4>
           <p className="text-md text-[#555555]">{year}</p>
         </Link>

@@ -3,7 +3,7 @@ import Acheivement from "./Acheivement/Acheivement";
 
 const Acheivements = () => {
   const [achievements, setAceivements] = useState([]);
-  fetch("https://qfahim-server.vercel.app/acheivements")
+  fetch("https://qfahim-server-raihan512.vercel.app/acheivements")
     .then((res) => res.json())
     .then((data) => setAceivements(data));
   return (
@@ -11,7 +11,7 @@ const Acheivements = () => {
       <div className="container mx-auto">
         {/* Title */}
         <div className="flex justify-center mt-10 mb-14">
-          <h2 className="text-2xl lg:text-4xl font-semibold uppercase sm:w-4/12 text-center border-b-2 border-[#E33324]">
+          <h2 className="text-2xl lg:text-4xl font-semibold uppercase sm:w-4/12 text-center">
             Achievements
           </h2>
         </div>

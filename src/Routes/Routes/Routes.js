@@ -30,7 +30,9 @@ export const Routes = createBrowserRouter([
         path: "/projects/project/:id",
         element: <ProjectItem />,
         loader: ({ params }) =>
-          fetch(`https://qfahim-server.vercel.app/project/${params.id}`),
+          fetch(
+            `https://qfahim-server-raihan512.vercel.app/project/${params.id}`
+          ),
       },
       {
         path: "/leaderships",
@@ -40,7 +42,9 @@ export const Routes = createBrowserRouter([
         path: "/leaderships/leadership/:id",
         element: <LeaderShipDetails />,
         loader: ({ params }) =>
-          fetch(`https://qfahim-server.vercel.app/leadership/${params.id}`),
+          fetch(
+            `https://qfahim-server-raihan512.vercel.app/leadership/${params.id}`
+          ),
       },
       {
         path: "/certificates",
@@ -50,7 +54,9 @@ export const Routes = createBrowserRouter([
         path: "/certificates/certificate/:id",
         element: <CertificateDetails />,
         loader: ({ params }) =>
-          fetch(`https://qfahim-server.vercel.app/certificate/${params.id}`),
+          fetch(
+            `https://qfahim-server-raihan512.vercel.app/certificate/${params.id}`
+          ),
       },
       {
         path: "/acheivements",
@@ -60,7 +66,9 @@ export const Routes = createBrowserRouter([
         path: "/acheivements/acheivement/:id",
         element: <AcheivementDetails />,
         loader: ({ params }) =>
-          fetch(`https://qfahim-server.vercel.app/acheivement/${params.id}`),
+          fetch(
+            `https://qfahim-server-raihan512.vercel.app/acheivement/${params.id}`
+          ),
       },
       {
         path: "/works",
@@ -70,7 +78,7 @@ export const Routes = createBrowserRouter([
         path: "/works/work/:id",
         element: <WorkDetails />,
         loader: ({ params }) =>
-          fetch(`https://qfahim-server.vercel.app/work/${params.id}`),
+          fetch(`https://qfahim-server-raihan512.vercel.app/work/${params.id}`),
       },
       {
         path: "/contact",

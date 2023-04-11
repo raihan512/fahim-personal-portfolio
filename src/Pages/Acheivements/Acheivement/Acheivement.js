@@ -8,7 +8,11 @@ const Acheivement = ({ achievementItem }) => {
       <Link to={`/acheivements/acheivement/${id}`}>
         <div>
           <div className="h-44 overflow-hidden">
-            <img src={thumb} className="w-full hover:opacity-75" alt="" />
+            <img
+              src={thumb}
+              className="w-full hover:opacity-75 transition-all"
+              alt=""
+            />
           </div>
           <h5 className="truncate text-lg font-semibold mt-3">{title}</h5>
           <p>{year}</p>

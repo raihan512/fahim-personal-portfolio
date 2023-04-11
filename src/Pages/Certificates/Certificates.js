@@ -4,7 +4,7 @@ import CertificateItem from "./CertificateItem/CertificateItem";
 const Certificates = () => {
   const [certificates, setCertificates] = useState([]);
 
-  fetch("https://qfahim-server.vercel.app/certificates")
+  fetch("https://qfahim-server-raihan512.vercel.app/certificates")
     .then((res) => res.json())
     .then((data) => setCertificates(data));
   return (
@@ -12,7 +12,7 @@ const Certificates = () => {
       <div className="container mx-auto">
         {/* Title */}
         <div className="flex justify-center mb-8">
-          <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold uppercase text-center border-b-2 border-[#E33324]">
+          <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold uppercase text-center">
             My Certificates
           </h2>
         </div>

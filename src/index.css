@@ -29,6 +29,10 @@ code {
   width: 20%;
 background-color: #E33324;
 }
+.section-title-primary::after{
+  left: 50%;
+  transform: translateX(-50%);
+}
 .section-title2::after{
   width: 5%;
 }

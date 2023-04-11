@@ -6,7 +6,7 @@ import { Fade } from "react-reveal";
 const HomeAcheivements = () => {
   const [acheivements, setAcheivements] = useState([]);
   //   Load Projects Data
-  fetch("https://qfahim-server.vercel.app/acheivements")
+  fetch("https://qfahim-server-raihan512.vercel.app/acheivements")
     .then((res) => res.json())
     .then((data) => setAcheivements(data));
   // Limit Showing Projects
@@ -36,7 +36,7 @@ const HomeAcheivements = () => {
                   ></Acheivement>
                 </Fade>
               )}
-              {achievementItem.id === "2" && (
+              {achievementItem.id === "3" && (
                 <Fade right>
                   <Acheivement
                     key={achievementItem.id}

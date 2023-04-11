@@ -6,7 +6,7 @@ const LeaderShip = () => {
   const [leadership, setLeadership] = useState([]);
   console.log(leadership);
 
-  fetch("https://qfahim-server.vercel.app/leadership")
+  fetch("https://qfahim-server-raihan512.vercel.app/leadership")
     .then((res) => res.json())
     .then((data) => setLeadership(data));
   return (
@@ -14,7 +14,7 @@ const LeaderShip = () => {
       <div className="container mx-auto">
         {/* Title */}
         <div className="flex justify-center mb-8">
-          <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold uppercase text-center border-b-2 border-[#E33324]">
+          <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold uppercase text-center">
             LeaderShip
           </h2>
         </div>
